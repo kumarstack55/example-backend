@@ -1,0 +1,14 @@
+services:
+  backend-service:
+    build:
+      context: .
+      dockerfile: container-images/example-backend/Dockerfile
+    image: example-backend:latest
+    container_name: backend
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
