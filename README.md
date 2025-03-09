@@ -36,6 +36,12 @@ ERROR_SUCCESS_COUNT=0 ERROR_FAILURE_COUNT=100 uv run app.py
 docker compose build
 ```
 
+or
+
+```bash
+docker build -t example-backend .
+```
+
 ## Running in a Container
 
 ```bash

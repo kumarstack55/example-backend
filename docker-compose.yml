@@ -2,7 +2,7 @@ services:
   backend-service:
     build:
       context: .
-      dockerfile: container-images/example-backend/Dockerfile
+      dockerfile: Dockerfile
     image: example-backend:latest
     container_name: backend
     ports:
