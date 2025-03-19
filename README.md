@@ -27,7 +27,7 @@ uv run app.py
 ## Running with Modified Error Rates
 
 ```bash
-ERROR_SUCCESS_COUNT=0 ERROR_FAILURE_COUNT=100 uv run app.py
+OK_RATIO=0.9 uv run app.py
 ```
 
 ## Building the Container Image
@@ -39,7 +39,7 @@ docker compose build
 or
 
 ```bash
-docker build -t example-backend .
+docker buildx build -t example-backend .
 ```
 
 ## Running in a Container
